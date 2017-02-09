@@ -1,2 +1,20 @@
-<h1>Products#new</h1>
-<p>Find me in app/views/products/new.html.erb</p>
+<h2>Add a new product</h2>
+<%= form_for @product do |f| %>
+	<%= render 'shared/error_messages', object: f.object %>
+	<%= f.label :name %>
+	<%= f.text_field :name, class: 'form-control' %>
+
+	<%= f.label :model %>
+	<%= f.text_field :model, class: 'form-control' %>
+
+	<%= f.label :manufacturer %>
+	<%= f.text_field :manufacturer, class: 'form-control' %>
+
+	<%= f.label :quantity %>
+	<%= f.number_field :quantity, class: 'form-control' %>
+
+	<%= f.label :price %>
+	<%= f.number_field :price, class: 'form-control' %>
+
+	<%= f.submit "Submit", class: 'btn btn-primary' %>	
+<%end %>

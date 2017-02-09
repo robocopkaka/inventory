@@ -32,9 +32,13 @@ gem 'jbuilder', '~> 2.5'
 
 # ODM for MongoDB
 gem 'mongoid', '6.0.0'
+#gem 'mongo_mapper'
 
 # devise for authentication
 gem 'devise'
+
+#bootstrap
+gem 'bootstrap-sass'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
